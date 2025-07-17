@@ -10,3 +10,7 @@ pre-commit:
         markdownlint:
             glob: '*.{md}'
             run: pnpm exec markdownlint {staged_files}
+commit-msg:
+    commands:
+        lint-commit-msg:
+            run: pnpm exec commitlint --edit {1}
