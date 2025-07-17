@@ -1,0 +1,31 @@
+{
+  "@schema": "https://json.schemastore.org/package",
+  "name": "@ndive/react-image",
+  "version": "0.1.0",
+  "description": "A comprehensive image utility kit for Next.js, and React. this package is created for leaning purposes. Caution is advised when using in production.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "image",
+    "utils",
+    "nestjs",
+    "react",
+    "filter"
+  ],
+  "homepage": "https://github.com/seunjin/react-image#readme",
+  "bugs": {
+    "url": "https://github.com/seunjin/react-image/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seunjin/react-image.git"
+  },
+  "author": {
+    "email": "jinseun@gmail.com",
+    "name": "seunjin"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.12.4"
+}
