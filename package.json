@@ -27,5 +27,8 @@
     "name": "seunjin"
   },
   "license": "MIT",
-  "packageManager": "pnpm@10.12.4"
+  "packageManager": "pnpm@10.12.4",
+  "devDependencies": {
+    "@naverpay/eslint-config": "^2.3.0"
+  }
 }
