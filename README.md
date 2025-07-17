@@ -1,3 +1,3 @@
 # react-image
 
-changesets-bot 테스트
+changesets-bot 테스트2
