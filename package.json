@@ -41,7 +41,20 @@
         "@naverpay/eslint-config": "^2.3.0",
         "@naverpay/markdown-lint": "^0.0.3",
         "@naverpay/prettier-config": "^1.0.1",
+        "@types/react": "^19.1.8",
         "lefthook": "^1.12.2",
+        "next": "^15.4.1",
+        "react": "^19.1.0",
         "typescript": "^5.8.3"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0",
+        "next": "^13.0.0 || ^14.0.0 || ^15.0.0"
+    },
+    "peerDependenciesMeta": {
+        "next": {
+            "optional": true
+        }
     }
 }
