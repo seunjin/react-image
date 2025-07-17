@@ -35,6 +35,8 @@
     "license": "MIT",
     "packageManager": "pnpm@10.12.4",
     "devDependencies": {
+        "@commitlint/cli": "^19.8.1",
+        "@commitlint/config-conventional": "^19.8.1",
         "@naverpay/editorconfig": "^0.0.4",
         "@naverpay/eslint-config": "^2.3.0",
         "@naverpay/markdown-lint": "^0.0.3",
