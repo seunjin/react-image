@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@naverpay/editorconfig':
+        specifier: ^0.0.4
+        version: 0.0.4
       '@naverpay/eslint-config':
         specifier: ^2.3.0
         version: 2.3.0(@types/estree@1.0.8)(@typescript-eslint/eslint-plugin@8.37.0(@typescript-eslint/parser@8.37.0(eslint@9.31.0)(typescript@5.8.3))(eslint@9.31.0)(typescript@5.8.3))(@typescript-eslint/parser@8.37.0(eslint@9.31.0)(typescript@5.8.3))(eslint@9.31.0)(jsonc-eslint-parser@2.4.0)(typescript@5.8.3)
@@ -94,6 +97,9 @@ packages:
 
   '@naverpay/ast-parser@0.0.2':
     resolution: {integrity: sha512-o9T9GmtF2r/z4jQVgUsaNrupKsxvpZ+zsa21UB37l7fnZSv3Nef8CiNFp2p4u5Vojp+X/uV/XT0sBw2kwd4y3w==}
+
+  '@naverpay/editorconfig@0.0.4':
+    resolution: {integrity: sha512-4TuaKZmZ7JJ5COBEBSW74Qjr9RcMitt2HnsL01OAUThGtvQgIMtlAhMYJ+vTLZtyqCrNsi5L0wSdqcpQNdQikw==}
 
   '@naverpay/eslint-config@2.3.0':
     resolution: {integrity: sha512-krHnN8Dx6K3sg7cu9u75A/pf5yMDHV2hPqFvOXtjx1FijE1Rqnfo8BdE9eQ1Pczo8VD0t+5Ozsz4mZUWun0Vfg==}
@@ -1798,6 +1804,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@naverpay/editorconfig@0.0.4': {}
 
   '@naverpay/eslint-config@2.3.0(@types/estree@1.0.8)(@typescript-eslint/eslint-plugin@8.37.0(@typescript-eslint/parser@8.37.0(eslint@9.31.0)(typescript@5.8.3))(eslint@9.31.0)(typescript@5.8.3))(@typescript-eslint/parser@8.37.0(eslint@9.31.0)(typescript@5.8.3))(eslint@9.31.0)(jsonc-eslint-parser@2.4.0)(typescript@5.8.3)':
     dependencies:
