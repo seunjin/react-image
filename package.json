@@ -60,7 +60,7 @@
         "md:fix": "markdownlint --fix **/*.md",
         "test": "vitest run",
         "release": "changeset publish",
-        "changeset-version": "changeset publish && pnpm run dm:fix"
+        "changeset-version": "changeset publish && pnpm run md:fix"
     },
     "keywords": [
         "image",
