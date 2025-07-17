@@ -11,6 +11,9 @@ importers:
       '@naverpay/eslint-config':
         specifier: ^2.3.0
         version: 2.3.0(@types/estree@1.0.8)(@typescript-eslint/eslint-plugin@8.37.0(@typescript-eslint/parser@8.37.0(eslint@9.31.0)(typescript@5.8.3))(eslint@9.31.0)(typescript@5.8.3))(@typescript-eslint/parser@8.37.0(eslint@9.31.0)(typescript@5.8.3))(eslint@9.31.0)(jsonc-eslint-parser@2.4.0)(typescript@5.8.3)
+      '@naverpay/prettier-config':
+        specifier: ^1.0.1
+        version: 1.0.1(prettier@3.6.2)
 
 packages:
 
@@ -98,6 +101,11 @@ packages:
     resolution: {integrity: sha512-o4sbNFEmdtBg7NjI3OSJEAZYgTc+bRGtntNz2lENdhJmBPve/aByhZvNFi13edIJ0f1+8oLHHu+0gJb05jKysA==}
     peerDependencies:
       eslint: '>=8.57.0'
+
+  '@naverpay/prettier-config@1.0.1':
+    resolution: {integrity: sha512-Wr0e6a91ufu+ijG+xIiCi5ZSKysZ9NqxoaBR1QR3cGe0sbB+oQXcHN3HdZF7bzU7mmlvNTD3/faWTQm4jNftKA==}
+    peerDependencies:
+      prettier: ^2.8.8 || ^3.0.0
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1267,6 +1275,11 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
 
@@ -1752,6 +1765,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@naverpay/prettier-config@1.0.1(prettier@3.6.2)':
+    dependencies:
+      prettier: 3.6.2
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -3145,6 +3162,8 @@ snapshots:
   possible-typed-array-names@1.1.0: {}
 
   prelude-ls@1.2.1: {}
+
+  prettier@3.6.2: {}
 
   prop-types@15.8.1:
     dependencies:
