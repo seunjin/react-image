@@ -9,6 +9,8 @@
         "lint:fix": "eslint '**/*.{js,jsx,ts,tsx}' --fix",
         "prettier": "prettier --check '**/*.{ts,tsx,js,mjs,cjs,json,yml}'",
         "prettier:fix": "prettier --write '**/*.{ts,tsx,js,mjs,cjs,json,yml}'",
+        "md": "markdownlint **/*.md",
+        "md:fix": "markdownlint --fix **/*.md",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
