@@ -16,12 +16,7 @@
         "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true,
         "isolatedModules": true,
-        "jsx": "react-jsx",
-        "paths": {
-            "$": ["src/*"],
-            "$type": ["src/types/index.ts"],
-            "$utils": ["src/utils/index.ts"]
-        }
+        "jsx": "react-jsx"
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules", "**/*.test.ts", "dist"]
