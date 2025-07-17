@@ -1,0 +1,59 @@
+name: 🛠️ 지속적 통합 (CI)
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+
+jobs:
+    📦 의존성 설치:
+        runs-on: ubuntu-latest
+        # strategy:
+        #   matrix:
+        #     next: [13.4.0, 14.2.21]
+        #     react: [18.2.0]
+        steps:
+            - uses: actions/checkout@v4
+            - uses: pnpm/action-setup@v4
+            - name: 🧰 Node.js 설정
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '20'
+                  cache: 'pnpm'
+            - name: 📥 의존성 설치
+              run: pnpm install --frozen-lockfile
+
+    🏗️ 빌드:
+        needs: 📦 의존성 설치
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: pnpm/action-setup@v4
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: '20'
+                  cache: 'pnpm'
+            - name: 📥 의존성 재설치
+              run: pnpm install --frozen-lockfile
+            - name: 🏗️ 프로젝트 빌드
+              run: pnpm run build
+            # - name: 🧪 테스트 실행
+            #   run: pnpm run test
+
+    🧹 코드 정리 & 린트:
+        needs: 📦 의존성 설치
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: pnpm/action-setup@v4
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: '20'
+                  cache: 'pnpm'
+            - name: 📥 의존성 재설치
+              run: pnpm install --frozen-lockfile
+            - name: 🔍 린트 검사
+              run: pnpm run lint
+            - name: 🎨 프리티어 검사
+              run: pnpm run prettier
