@@ -98,6 +98,7 @@
         "@vitejs/plugin-react-swc": "^3.10.2",
         "babel-plugin-polyfill-corejs3": "^0.13.0",
         "browserslist-to-esbuild": "^2.1.1",
+        "eslint": "^9.31.0",
         "lefthook": "^1.12.2",
         "next": "^15.4.1",
         "react": "^19.1.0",

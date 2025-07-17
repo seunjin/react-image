@@ -54,6 +54,9 @@ importers:
       browserslist-to-esbuild:
         specifier: ^2.1.1
         version: 2.1.1(browserslist@4.25.1)
+      eslint:
+        specifier: ^9.31.0
+        version: 9.31.0(jiti@2.4.2)
       lefthook:
         specifier: ^1.12.2
         version: 1.12.2
