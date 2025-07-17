@@ -5,6 +5,8 @@
   "description": "A comprehensive image utility kit for Next.js, and React. this package is created for leaning purposes. Caution is advised when using in production.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint '**/*.{js,jsx,ts,tsx}' --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
