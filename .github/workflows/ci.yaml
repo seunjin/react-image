@@ -7,7 +7,8 @@ on:
     pull_request:
 
 jobs:
-    📦 의존성 설치:
+    setup:
+        name: 📦 의존성 설치
         runs-on: ubuntu-latest
         # strategy:
         #   matrix:
@@ -24,8 +25,9 @@ jobs:
             - name: 📥 의존성 설치
               run: pnpm install --frozen-lockfile
 
-    🏗️ 빌드:
-        needs: 📦 의존성 설치
+    build:
+        name: 🏗️ 빌드
+        needs: setup
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
@@ -41,8 +43,9 @@ jobs:
             # - name: 🧪 테스트 실행
             #   run: pnpm run test
 
-    🧹 코드 정리 & 린트:
-        needs: 📦 의존성 설치
+    lint:
+        name: 🧹 코드 정리 & 린트
+        needs: setup
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
