@@ -3,13 +3,11 @@
 import Image from 'next/image'
 import {useState, useCallback, CSSProperties, useMemo, memo} from 'react'
 
-import type {NextImageFilterProps} from '$type'
-import {getFilter} from '$utils'
+import type {NextImageFilterProps} from './types/index'
+import {getFilter} from './utils/index'
 
-import type {FC} from 'react'
-
-export const NextImageFilter: FC<NextImageFilterProps> = memo(
-    ({grayscale = 0, sepia = 0, brightness = 100, contrast = 100, blur = 0, ...props}) => {
+export const NextImageFilter = memo(
+    ({grayscale = 0, sepia = 0, brightness = 100, contrast = 100, blur = 0, ...props}: NextImageFilterProps) => {
         const [ImageError, setImageError] = useState<boolean>(false)
 
         const handleError = useCallback(() => {

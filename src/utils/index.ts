@@ -1,4 +1,4 @@
-import {ImageFilter} from '$type'
+import type {ImageFilter} from '../types/index'
 
 type CSSFilterValue = NonNullable<CSSStyleDeclaration['filter']>
 

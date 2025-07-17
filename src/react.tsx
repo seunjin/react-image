@@ -2,13 +2,11 @@
 
 import {useState, useCallback, CSSProperties, useMemo, memo} from 'react'
 
-import type {ReactImageFilterProps} from '$type'
-import {getFilter} from '$utils'
+import type {ReactImageFilterProps} from './types/index'
+import {getFilter} from './utils/index'
 
-import type {FC} from 'react'
-
-export const ReactImageFilter: FC<ReactImageFilterProps> = memo(
-    ({grayscale = 0, sepia = 0, brightness = 100, contrast = 100, blur = 0, ...props}) => {
+export const ReactImageFilter = memo(
+    ({grayscale = 0, sepia = 0, brightness = 100, contrast = 100, blur = 0, ...props}: ReactImageFilterProps) => {
         const [ImageError, setImageError] = useState<boolean>(false)
 
         const handleError = useCallback(() => {
